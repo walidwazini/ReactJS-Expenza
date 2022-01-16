@@ -1,21 +1,17 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
+import ExpenseDate from './ExpenseDate'
 import './ExpenseItem.css'
 
-const ExpenseItem = () => {
+const ExpenseItem = (props) => {
   return (
-    <Card bg='dark' text='dark' >
-      <Card.Body>
-      <Card.Header className='item__date' >Date</Card.Header>
-        <Card.Title className='item__title' >Expense Title</Card.Title>
-          <div className='item__desc'>
-            With supporting text below as a natural lead-in to additional content.
-          </div>
-          <Card.Text className='item__price' >
-            RM 300
-          </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className='expense-item'>
+      <ExpenseDate dateItem={props.date} />
+      <div className='expense-item__description'>
+        <h2>{props.title}</h2>
+        <div className='expense-item__price'>${props.amount}</div>
+      </div>
+    </div>
   )
 }
 
