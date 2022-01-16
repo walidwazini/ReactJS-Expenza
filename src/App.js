@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from './Components/ExpenseItem';
+
+import Expenses from './Components/Expenses/Expenses.js';
+import NewExpense from './Components/NewExpense/NewExpense';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -27,15 +29,9 @@ function App() {
   ];
   return (
     <div className='App' >
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
+      <NewExpense />
+      <Expenses
+        items={expenses}
       />
     </div>
   );
