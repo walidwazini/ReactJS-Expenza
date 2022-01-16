@@ -1,0 +1,16 @@
+.item__title {
+  color: rgb(75, 75, 158);
+}
+
+.item__date{
+  color: aliceblue;
+}
+
+.item__desc {
+  color: aliceblue;
+}
+
+.item__price {
+  color: aliceblue;
+  font-size: 20px;
+}
