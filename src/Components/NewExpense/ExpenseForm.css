@@ -24,3 +24,31 @@
 .new-expense__actions {
   text-align: right;
 }
+
+.btn {
+  background: #9251f5;
+  background-image: -webkit-linear-gradient(top, #9251f5, #2b2fb8);
+  background-image: -moz-linear-gradient(top, #9251f5, #2b2fb8);
+  background-image: -ms-linear-gradient(top, #9251f5, #2b2fb8);
+  background-image: -o-linear-gradient(top, #9251f5, #2b2fb8);
+  background-image: linear-gradient(to bottom, #9251f5, #2b2fb8);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 19px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #a06ef0;
+  background-image: -webkit-linear-gradient(top, #a06ef0, #5f3acf);
+  background-image: -moz-linear-gradient(top, #a06ef0, #5f3acf);
+  background-image: -ms-linear-gradient(top, #a06ef0, #5f3acf);
+  background-image: -o-linear-gradient(top, #a06ef0, #5f3acf);
+  background-image: linear-gradient(to bottom, #a06ef0, #5f3acf);
+  text-decoration: none;
+}

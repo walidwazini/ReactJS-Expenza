@@ -19,7 +19,7 @@ const ExpenseItem = (props) => {
       <div className='expense-item__description'>
         <h2>{props.title}</h2>
         <p> {subtitle} </p>
-        <div className='expense-item__price'>${props.amount}</div>
+        <div className='expense-item__price'>RM {props.amount}</div>
       </div>
       <button style={{ color: 'red', fontWeight: 'bold' }} onClick={clickHandler} >Change Title</button>
     </div>
