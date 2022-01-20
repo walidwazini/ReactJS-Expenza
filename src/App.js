@@ -11,7 +11,7 @@ function App() {
       id: 'e1',
       title: 'Toilet Paper',
       amount: 94.12,
-      date: new Date(2020, 7, 14),
+      date: new Date(2021, 0, 14),
     },
     { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
     {
@@ -27,9 +27,15 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const addExpenseHandler = expense => {
+    console.log(expense)
+    console.log('in app .js')
+   }
+
   return (
     <div className='App' >
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses
         items={expenses}
       />
