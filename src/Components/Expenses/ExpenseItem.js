@@ -3,16 +3,6 @@ import ExpenseDate from './ExpenseDate'
 import './ExpenseItem.css'
 
 const ExpenseItem = (props) => {
-  // const [subtitle, setSubtitle] = useState(props.title)
-
-  // const clickHandler = () => {
-  //   if (subtitle === props.title) {
-  //     setSubtitle('changes')
-  //   } else {
-  //     setSubtitle(props.title)
-  //   }
-  // }
-
   const consoleHandler = () => {
     // const currentMonth = props.date.getMonth + 1
     const month = props.date.toLocaleString('en-GB', { month: 'long' })

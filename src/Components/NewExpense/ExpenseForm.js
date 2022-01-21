@@ -6,20 +6,11 @@ const ExpenseForm = (props) => {
   const [enteredAmount, setEnteredAmount] = useState('')
   const [enteredDate, setEnteredDate] = useState('')
 
-  // const [userInput, setUserInput] = useState({
-  //   enteredTitle: '',
-  //   enteredAmount: '',
-  //   enteredDate: ''
-  // })
+
 
   const titleChangeHandler = ev => {
     setEnteredTitle(ev.target.value)
-    // setUserInput({...userInput,enteredTitle: ev.target.value,})
-
-    // Our state update depends on previous state
-    // setUserInput((prevState) => {
-    //   return {...prevState, enteredTitle: ev.target.value}
-    // })
+    
   }
   const amountChangeHandler = (amount) => {
     // setUserInput({...userInput,enteredAmount: amount.target.value,})
