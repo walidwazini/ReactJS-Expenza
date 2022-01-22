@@ -25,6 +25,10 @@
   text-align: right;
 }
 
+.cancel-button {
+  background-color: #c40707 !important;
+}
+
 .btn {
   background: #9251f5;
   background-image: -webkit-linear-gradient(top, #9251f5, #2b2fb8);

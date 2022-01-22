@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 // import { Card } from 'react-bootstrap'
 import './Expenses.css'
-import ExpenseItem from './ExpenseItem'
 import ExpensesFilter from './ExpensesFilter'
 import Card from '../UI/Card'
+import ExpensesList from './ExpensesList'
 
 const Expenses = props => {
   const [filteredYear, setFilteredYear] = useState('2021');
@@ -29,13 +29,14 @@ const Expenses = props => {
     props.items.filter(expense => {
       let options = { month: 'long' };
       let myDate = new Intl.DateTimeFormat('en-GB', options).format(expense.date)
+      let myDate2 = expense.date.toLocaleString('en-GB', options)
+      // .getMonth().toString() === filteredMonth
       return (
-        // expense.date
-        // .getMonth().toString() === filteredMonth
-        // .toLocaleString('en-GB', { month: 'long' }) === filteredMonth
         myDate === filteredMonth
       )
     })
+
+
 
   // ----------------------------------------------------
 
@@ -48,17 +49,7 @@ const Expenses = props => {
           onChangeFilter={filterChangeHandler}
           onChangeMonth={filterMonthHandler}
         />
-        {
-          // Change from props.items data to filteredExpenses
-          filteredExpenses2.map((expense) => (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          ))
-        }
+        <ExpensesList items={filteredExpenses} />
       </Card>
     </div>
   )
