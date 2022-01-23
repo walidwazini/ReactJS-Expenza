@@ -12,7 +12,7 @@
 .new-expense button {
   font: inherit;
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   border: 1px solid #40005d;
   background-color: #050b64;
   color: white;
@@ -24,11 +24,15 @@
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 0px solid #40005d;
-  background-color: #313bce !important; 
+  border: none !important;
+  background-color: #1720a7 !important; 
   color: white;
   border-radius: 12px;
   margin-right: 1rem;
+}
+
+.form-button:hover {
+  background-color: #2934c5 !important;
 }
 
 .new-expense button:hover,
